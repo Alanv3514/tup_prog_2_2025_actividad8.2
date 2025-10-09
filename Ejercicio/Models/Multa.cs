@@ -10,9 +10,9 @@ namespace Ejercicio.Models
     public class Multa :IComparable<Multa> ,IExportable
     {
         public string Patente { get; set; }
-        DateTime Vencimiento { get; set; }
-        double Importe { get; set; }
-        Multa()
+        public DateTime Vencimiento { get; set; }
+        public double Importe { get; set; }
+        public Multa()
         {
         }
 
@@ -33,7 +33,7 @@ namespace Ejercicio.Models
 
         public override string ToString()
         {
-            return $"Patente:{this.Patente}, Importe:{this.Importe}$, Vencimiento:{this.Vencimiento}";
+            return $"Patente:{this.Patente}, Importe:{this.Importe}$, Vencimiento:{this.Vencimiento:dd/mm/yyyy}";
         }
     }
 }

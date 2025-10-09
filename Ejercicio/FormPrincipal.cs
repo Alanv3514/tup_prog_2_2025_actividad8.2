@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ejercicio.Models;
 
 namespace Ejercicio
 {
@@ -18,7 +19,13 @@ namespace Ejercicio
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {}
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
         {
-                    }
+            Multa nuevo = new Multa();
+            nuevo.Patente = tbPatente.Text;
+            nuevo.Vencimiento = 
+        }
     }
 }
