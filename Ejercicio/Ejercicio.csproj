@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Models\Exportadores\CampoFijoExportador.cs" />
     <Compile Include="Models\Exportadores\CSVExportador.cs" />
+    <Compile Include="Models\Exportadores\ExportadorFactory.cs" />
     <Compile Include="Models\Exportadores\IExportador.cs" />
     <Compile Include="Models\Exportadores\JSONExportador.cs" />
     <Compile Include="Models\Exportadores\XMLExportador.cs" />

@@ -72,19 +72,19 @@
             // 
             this.tbPatente.Location = new System.Drawing.Point(86, 25);
             this.tbPatente.Name = "tbPatente";
-            this.tbPatente.Size = new System.Drawing.Size(200, 20);
+            this.tbPatente.Size = new System.Drawing.Size(277, 20);
             this.tbPatente.TabIndex = 3;
             // 
             // tbImporte
             // 
             this.tbImporte.Location = new System.Drawing.Point(86, 91);
             this.tbImporte.Name = "tbImporte";
-            this.tbImporte.Size = new System.Drawing.Size(200, 20);
+            this.tbImporte.Size = new System.Drawing.Size(277, 20);
             this.tbImporte.TabIndex = 5;
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(312, 25);
+            this.btnConfirmar.Location = new System.Drawing.Point(382, 25);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmar.TabIndex = 7;
@@ -96,49 +96,54 @@
             // 
             this.dtpVencimiento.Location = new System.Drawing.Point(86, 62);
             this.dtpVencimiento.Name = "dtpVencimiento";
-            this.dtpVencimiento.Size = new System.Drawing.Size(200, 20);
+            this.dtpVencimiento.Size = new System.Drawing.Size(277, 20);
             this.dtpVencimiento.TabIndex = 8;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(312, 127);
+            this.btnActualizar.Enabled = false;
+            this.btnActualizar.Location = new System.Drawing.Point(382, 127);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 23);
             this.btnActualizar.TabIndex = 9;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnImportar
             // 
-            this.btnImportar.Location = new System.Drawing.Point(312, 163);
+            this.btnImportar.Location = new System.Drawing.Point(382, 163);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(75, 23);
             this.btnImportar.TabIndex = 10;
             this.btnImportar.Text = "Importar";
             this.btnImportar.UseVisualStyleBackColor = true;
+            this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
             // 
             // btnExportar
             // 
-            this.btnExportar.Location = new System.Drawing.Point(312, 198);
+            this.btnExportar.Enabled = false;
+            this.btnExportar.Location = new System.Drawing.Point(382, 198);
             this.btnExportar.Name = "btnExportar";
             this.btnExportar.Size = new System.Drawing.Size(75, 23);
             this.btnExportar.TabIndex = 11;
             this.btnExportar.Text = "Exportar";
             this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // lsbVer
             // 
             this.lsbVer.FormattingEnabled = true;
             this.lsbVer.Location = new System.Drawing.Point(18, 128);
             this.lsbVer.Name = "lsbVer";
-            this.lsbVer.Size = new System.Drawing.Size(268, 95);
+            this.lsbVer.Size = new System.Drawing.Size(345, 121);
             this.lsbVer.TabIndex = 12;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 243);
+            this.ClientSize = new System.Drawing.Size(561, 275);
             this.Controls.Add(this.lsbVer);
             this.Controls.Add(this.btnExportar);
             this.Controls.Add(this.btnImportar);
@@ -151,7 +156,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormPrincipal";
-            this.Text = "Form1";
+            this.Text = "ProgramaPrincipal";
             this.ResumeLayout(false);
             this.PerformLayout();
 

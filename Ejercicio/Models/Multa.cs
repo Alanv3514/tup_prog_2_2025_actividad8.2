@@ -33,7 +33,7 @@ namespace Ejercicio.Models
 
         public override string ToString()
         {
-            return $"Patente:{this.Patente}, Importe:{this.Importe}$, Vencimiento:{this.Vencimiento:dd/mm/yyyy}";
+            return $"Patente:{this.Patente}, Importe:{this.Importe}$, Vencimiento:{this.Vencimiento:dd/MM/yyyy}";
         }
     }
 }
